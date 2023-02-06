@@ -1,0 +1,114 @@
+table Producto {
+  ProductoID int [primary key]
+  Codigo varchar
+  Linea int //Relacion
+  Tipo int // Relacion
+  Ubicacion varchar // Ubicacion Relacion Bodega
+  Unidad int
+  Medida varchar
+  Grupo int // Relacion
+  Activo bool
+  IVA bool
+  Perecible bool
+  Comentario text
+  Marca varchar
+  Color varchar
+  FechaCaducidad datetime // Puede ser nulo
+}
+table Linea { // Relacion con Producto
+  LineaID int [primary key]
+  Nombre varchar
+}
+table Tipo {
+  TipoID int [primary key]
+  Nombre varchar 
+}
+table Grupo{ // Como categoria
+  GrupoID int [primary key]
+  Nombre varchar
+}
+
+table Proveedor {
+  ProveedorID int [primary key]
+  RazonSocial varchar
+  Nombre varchar
+  Codigo int [unique]
+  Contacto varchar
+  TipoProveedor int // Relacion
+  Direccion varchar
+  Telefono varchar
+  Email email
+  Plazo datetime
+  RUC varchar
+  ProvinciaID int
+  EstadoID int
+  TipoPersona int
+  PaginaWeb varchar
+  BodegaID int
+}
+table TipoProveedor{
+  TipoProveedorID int [primary key]
+  Nombre varchar
+}
+table TipoPersona{
+  TipoPersona int [primary key]
+  Nombre varchar
+}
+table Bodega{
+  BodegaID int [primary key]
+  Direccion varchar
+  Estado int 
+  Proviencia int
+}
+table Estado{
+  EstadoID int [primary key]
+  Nombre varchar
+}
+table Provincia{
+  ProvinciaID int [primary key]
+  Nombre varchar
+}
+table OrdenCompra {
+  OrdenCompraID int [primary key]
+  ProveedorID int
+  CodProveedor int
+  Fecha datetime
+  Referencia varchar
+  CondicionesPago int // Relacion
+  BodegaID int // Relacion?
+  Observacion text
+  Subtotal float
+  Descuento float
+  Impuestos float
+  Total float
+}
+table IngresoProducto {
+  IngresoProductoID int [primary key]
+  CodigoIngreso int
+  BodegaID int // Relacion?
+  ProveedorID int // Relacion
+  Motivo int // Relacion
+  Fecha datetime
+  // Esto no se si agregarlo o no la verdad
+  Subtotal float
+  Descuento float
+  Impuestos float
+  Total float
+}
+table Motivo {
+  MotivoID int 
+  Nombre varchar
+}
+table SalidaProducto {
+  SalidaProductoID int [primary key]
+  Codigo varchar
+  BodegaID int 
+  MotivoID int
+  Fecha datetime
+  Comentario text
+  RequisicionID int // Relacion
+}
+table Requisicion {
+  RequisicionID int [primary key]
+  Fecha datetime
+}
