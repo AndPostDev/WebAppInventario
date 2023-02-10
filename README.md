@@ -4,4 +4,4 @@ Pueden visualizar en el siguiente link la DB recuerden que si hace modificacione
 https://dbdiagram.io/d/63e14625296d97641d7ed573
 Para editarlo tiene que copiar el codigo y modificarlo en sus cuentas :)
 
-### *** Recuerden que este proyecto aun no tiene los paquetes instalados precaoucion al ejecutar ***
+### *** Recuerden que este proyecto aun no tiene los paquetes instalados precaucion al ejecutar ***
