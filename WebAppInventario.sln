@@ -3,7 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppInventario", "WebAppInventario\WebAppInventario.csproj", "{ED1779CA-2690-490F-8230-A0DDED98840F}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - UI", "0 - UI", "{23398903-D476-4393-95AE-C6A079836DC3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Data Access Layer", "1 - Data Access Layer", "{FAB70127-F540-4614-BB6C-3425B934E236}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Models", "2 - Models", "{3659BF66-DFA1-4DBB-9B5A-64333F2E0B5C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Business Logic", "3 - Business Logic", "{B813DABA-21A7-40B5-886D-D5019EE3D6F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lourtec.WebAppInventario.UI", "Lourtec.WebAppInventario.UI\Lourtec.WebAppInventario.UI.csproj", "{E35DC772-2622-4E66-AE58-7CC21B9316A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lourtec.WebAppInventario.DAL", "Lourtec.WebAppInventario.DAL\Lourtec.WebAppInventario.DAL.csproj", "{8B1C8927-D785-4D0A-818C-91AD4F725411}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lourtec.WebAppInventario.Models", "Lourtec.WebAppInventario.Models\Lourtec.WebAppInventario.Models.csproj", "{4F2C4326-F471-404D-899F-F47FBDD83527}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lourtec.WebAppInventario.Logic", "Lourtec.WebAppInventario.Logic\Lourtec.WebAppInventario.Logic.csproj", "{A777A8CA-3C8D-4739-A68B-F35D2548D740}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,13 +25,31 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{ED1779CA-2690-490F-8230-A0DDED98840F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ED1779CA-2690-490F-8230-A0DDED98840F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ED1779CA-2690-490F-8230-A0DDED98840F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ED1779CA-2690-490F-8230-A0DDED98840F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E35DC772-2622-4E66-AE58-7CC21B9316A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E35DC772-2622-4E66-AE58-7CC21B9316A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E35DC772-2622-4E66-AE58-7CC21B9316A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E35DC772-2622-4E66-AE58-7CC21B9316A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B1C8927-D785-4D0A-818C-91AD4F725411}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B1C8927-D785-4D0A-818C-91AD4F725411}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B1C8927-D785-4D0A-818C-91AD4F725411}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B1C8927-D785-4D0A-818C-91AD4F725411}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F2C4326-F471-404D-899F-F47FBDD83527}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F2C4326-F471-404D-899F-F47FBDD83527}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F2C4326-F471-404D-899F-F47FBDD83527}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F2C4326-F471-404D-899F-F47FBDD83527}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A777A8CA-3C8D-4739-A68B-F35D2548D740}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A777A8CA-3C8D-4739-A68B-F35D2548D740}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A777A8CA-3C8D-4739-A68B-F35D2548D740}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A777A8CA-3C8D-4739-A68B-F35D2548D740}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E35DC772-2622-4E66-AE58-7CC21B9316A9} = {23398903-D476-4393-95AE-C6A079836DC3}
+		{8B1C8927-D785-4D0A-818C-91AD4F725411} = {FAB70127-F540-4614-BB6C-3425B934E236}
+		{4F2C4326-F471-404D-899F-F47FBDD83527} = {3659BF66-DFA1-4DBB-9B5A-64333F2E0B5C}
+		{A777A8CA-3C8D-4739-A68B-F35D2548D740} = {B813DABA-21A7-40B5-886D-D5019EE3D6F0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3665A65B-4E04-41A9-B08A-6DA6610F6DCF}
