@@ -6,4 +6,10 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Lourtec.WebAppInventario.DAL\Lourtec.WebAppInventario.DAL.csproj" />
+    <ProjectReference Include="..\Lourtec.WebAppInventario.Logic\Lourtec.WebAppInventario.Logic.csproj" />
+    <ProjectReference Include="..\Lourtec.WebAppInventario.Models\Lourtec.WebAppInventario.Models.csproj" />
+  </ItemGroup>
+
 </Project>

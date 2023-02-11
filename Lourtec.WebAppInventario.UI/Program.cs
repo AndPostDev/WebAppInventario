@@ -1,7 +1,15 @@
+using Microsoft.EntityFrameworkCore;
+using Lourtec.WebAppInventario.DAL.DataContext;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<DbwebInventarioContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("SQLConnection"));
+});
 
 var app = builder.Build();
 
