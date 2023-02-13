@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Lourtec.WebAppInventario.DAL.DataContext;
+namespace Lourtec.WebAppInventario.Models;
 
 public partial class Salida
 {
