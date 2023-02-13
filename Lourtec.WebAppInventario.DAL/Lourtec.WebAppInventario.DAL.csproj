@@ -7,8 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="PassModels\**" />
+    <EmbeddedResource Remove="PassModels\**" />
+    <None Remove="PassModels\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="DataContext\" />
-    <Folder Include="PassModels\" />
   </ItemGroup>
 
   <ItemGroup>

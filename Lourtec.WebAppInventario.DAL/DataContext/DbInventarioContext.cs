@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
+using Lourtec.WebAppInventario.Models;
 
 namespace Lourtec.WebAppInventario.DAL.DataContext;
 
