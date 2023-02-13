@@ -11,4 +11,9 @@
     <Folder Include="Services\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Lourtec.WebAppInventario.DAL\Lourtec.WebAppInventario.DAL.csproj" />
+    <ProjectReference Include="..\Lourtec.WebAppInventario.Models\Lourtec.WebAppInventario.Models.csproj" />
+  </ItemGroup>
+
 </Project>
