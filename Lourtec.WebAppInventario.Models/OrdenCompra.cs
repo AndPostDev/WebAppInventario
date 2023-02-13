@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Lourtec.WebAppInventario.Models;
+namespace Lourtec.WebAppInventario.DAL.DataContext;
 
 public partial class OrdenCompra
 {
@@ -21,7 +21,7 @@ public partial class OrdenCompra
 
     public virtual CondicionPago? CondicionPago { get; set; }
 
-    public virtual ICollection<LineaCompra> LineaCompras { get; } = new List<LineaCompra>();
+    public virtual ICollection<LineaCompra> LineaCompra { get; } = new List<LineaCompra>();
 
     public virtual Proveedor? Proveedor { get; set; }
 }

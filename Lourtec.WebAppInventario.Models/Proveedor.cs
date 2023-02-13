@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Lourtec.WebAppInventario.Models;
+namespace Lourtec.WebAppInventario.DAL.DataContext;
 
 public partial class Proveedor
 {
@@ -41,11 +41,11 @@ public partial class Proveedor
 
     public virtual Estado? Estado { get; set; }
 
-    public virtual ICollection<Ingreso> Ingresos { get; } = new List<Ingreso>();
+    public virtual ICollection<Ingreso> Ingreso { get; } = new List<Ingreso>();
 
-    public virtual ICollection<OrdenCompra> OrdenCompras { get; } = new List<OrdenCompra>();
+    public virtual ICollection<OrdenCompra> OrdenCompra { get; } = new List<OrdenCompra>();
 
-    public virtual Provincium? Provincia { get; set; }
+    public virtual Provincia? Provincia { get; set; }
 
     public virtual TipoPersona? TipoPersonaNavigation { get; set; }
 

@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Lourtec.WebAppInventario.Models;
+namespace Lourtec.WebAppInventario.DAL.DataContext;
 
-public partial class Existencium
+public partial class Existencia
 {
     public int ExistenciaId { get; set; }
 

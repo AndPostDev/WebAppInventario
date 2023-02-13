@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <Folder Include="DataContext\" />
+    <Folder Include="PassModels\" />
   </ItemGroup>
 
   <ItemGroup>

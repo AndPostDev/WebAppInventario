@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Lourtec.WebAppInventario.Models;
+namespace Lourtec.WebAppInventario.DAL.DataContext;
 
 public partial class Motivo
 {
@@ -9,7 +9,7 @@ public partial class Motivo
 
     public string Nombre { get; set; } = null!;
 
-    public virtual ICollection<Ingreso> Ingresos { get; } = new List<Ingreso>();
+    public virtual ICollection<Ingreso> Ingreso { get; } = new List<Ingreso>();
 
-    public virtual ICollection<Salidum> Salida { get; } = new List<Salidum>();
+    public virtual ICollection<Salida> Salida { get; } = new List<Salida>();
 }

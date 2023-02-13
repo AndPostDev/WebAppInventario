@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Lourtec.WebAppInventario.Models;
+namespace Lourtec.WebAppInventario.DAL.DataContext;
 
 public partial class Bodega
 {
@@ -19,11 +19,11 @@ public partial class Bodega
 
     public virtual Estado? Estado { get; set; }
 
-    public virtual ICollection<Existencium> Existencia { get; } = new List<Existencium>();
+    public virtual ICollection<Existencia> Existencia { get; } = new List<Existencia>();
 
-    public virtual ICollection<Ingreso> Ingresos { get; } = new List<Ingreso>();
+    public virtual ICollection<Ingreso> Ingreso { get; } = new List<Ingreso>();
 
-    public virtual Provincium? Provincia { get; set; }
+    public virtual Provincia? Provincia { get; set; }
 
-    public virtual ICollection<Salidum> Salida { get; } = new List<Salidum>();
+    public virtual ICollection<Salida> Salida { get; } = new List<Salida>();
 }

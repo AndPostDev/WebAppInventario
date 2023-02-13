@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Lourtec.WebAppInventario.Models;
+namespace Lourtec.WebAppInventario.DAL.DataContext;
 
-public partial class LineaSalidum
+public partial class LineaSalida
 {
     public int LineaSalidaId { get; set; }
 
@@ -15,5 +15,5 @@ public partial class LineaSalidum
 
     public virtual Producto? Producto { get; set; }
 
-    public virtual Salidum? Salida { get; set; }
+    public virtual Salida? Salida { get; set; }
 }

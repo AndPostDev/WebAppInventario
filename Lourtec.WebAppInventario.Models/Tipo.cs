@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Lourtec.WebAppInventario.Models;
+namespace Lourtec.WebAppInventario.DAL.DataContext;
 
 public partial class Tipo
 {
@@ -9,5 +9,5 @@ public partial class Tipo
 
     public string Nombre { get; set; } = null!;
 
-    public virtual ICollection<Producto> Productos { get; } = new List<Producto>();
+    public virtual ICollection<Producto> Producto { get; } = new List<Producto>();
 }

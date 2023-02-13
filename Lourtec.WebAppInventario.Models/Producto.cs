@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Lourtec.WebAppInventario.Models;
+namespace Lourtec.WebAppInventario.DAL.DataContext;
 
 public partial class Producto
 {
@@ -31,23 +31,23 @@ public partial class Producto
 
     public double Precio { get; set; }
 
-    public virtual ICollection<Color> Colors { get; } = new List<Color>();
+    public virtual ICollection<Color> Color { get; } = new List<Color>();
 
-    public virtual ICollection<Existencium> Existencia { get; } = new List<Existencium>();
+    public virtual ICollection<Existencia> Existencia { get; } = new List<Existencia>();
 
     public virtual Grupo? GrupoNavigation { get; set; }
 
-    public virtual ICollection<IngresoDetalle> IngresoDetalles { get; } = new List<IngresoDetalle>();
+    public virtual ICollection<IngresoDetalle> IngresoDetalle { get; } = new List<IngresoDetalle>();
 
     public virtual Linea? Linea { get; set; }
 
-    public virtual ICollection<LineaCompra> LineaCompras { get; } = new List<LineaCompra>();
+    public virtual ICollection<LineaCompra> LineaCompra { get; } = new List<LineaCompra>();
 
-    public virtual ICollection<LineaSalidum> LineaSalida { get; } = new List<LineaSalidum>();
+    public virtual ICollection<LineaSalida> LineaSalida { get; } = new List<LineaSalida>();
 
-    public virtual ICollection<Marca> Marcas { get; } = new List<Marca>();
+    public virtual ICollection<Marca> Marca { get; } = new List<Marca>();
 
-    public virtual ICollection<Medidum> Medida { get; } = new List<Medidum>();
+    public virtual ICollection<Medida> Medida { get; } = new List<Medida>();
 
     public virtual Tipo? TipoNavigation { get; set; }
 }

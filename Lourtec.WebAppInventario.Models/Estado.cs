@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Lourtec.WebAppInventario.Models;
+namespace Lourtec.WebAppInventario.DAL.DataContext;
 
 public partial class Estado
 {
@@ -9,7 +9,7 @@ public partial class Estado
 
     public string Nombre { get; set; } = null!;
 
-    public virtual ICollection<Bodega> Bodegas { get; } = new List<Bodega>();
+    public virtual ICollection<Bodega> Bodega { get; } = new List<Bodega>();
 
-    public virtual ICollection<Proveedor> Proveedors { get; } = new List<Proveedor>();
+    public virtual ICollection<Proveedor> Proveedor { get; } = new List<Proveedor>();
 }

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Lourtec.WebAppInventario.Models;
+namespace Lourtec.WebAppInventario.DAL.DataContext;
 
 public partial class Empresa
 {
@@ -11,9 +11,9 @@ public partial class Empresa
 
     public string Password { get; set; } = null!;
 
-    public virtual ICollection<Bodega> Bodegas { get; } = new List<Bodega>();
+    public virtual ICollection<Bodega> Bodega { get; } = new List<Bodega>();
 
-    public virtual ICollection<Proveedor> Proveedors { get; } = new List<Proveedor>();
+    public virtual ICollection<Proveedor> Proveedor { get; } = new List<Proveedor>();
 
-    public virtual ICollection<Usuario> Usuarios { get; } = new List<Usuario>();
+    public virtual ICollection<Usuario> Usuario { get; } = new List<Usuario>();
 }

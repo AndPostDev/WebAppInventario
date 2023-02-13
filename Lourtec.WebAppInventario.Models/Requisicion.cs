@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Lourtec.WebAppInventario.Models;
+namespace Lourtec.WebAppInventario.DAL.DataContext;
 
 public partial class Requisicion
 {
@@ -15,5 +15,5 @@ public partial class Requisicion
 
     public string? Comentario { get; set; }
 
-    public virtual ICollection<Salidum> Salida { get; } = new List<Salidum>();
+    public virtual ICollection<Salida> Salida { get; } = new List<Salida>();
 }

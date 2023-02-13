@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Lourtec.WebAppInventario.Models;
+namespace Lourtec.WebAppInventario.DAL.DataContext;
 
 public partial class TipoProveedor
 {
@@ -9,5 +9,5 @@ public partial class TipoProveedor
 
     public string Nombre { get; set; } = null!;
 
-    public virtual ICollection<Proveedor> Proveedors { get; } = new List<Proveedor>();
+    public virtual ICollection<Proveedor> Proveedor { get; } = new List<Proveedor>();
 }

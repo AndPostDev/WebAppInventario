@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Lourtec.WebAppInventario.Models;
+namespace Lourtec.WebAppInventario.DAL.DataContext;
 
-public partial class Salidum
+public partial class Salida
 {
     public int SalidaId { get; set; }
 
@@ -21,7 +21,7 @@ public partial class Salidum
 
     public virtual Bodega Bodega { get; set; } = null!;
 
-    public virtual ICollection<LineaSalidum> LineaSalida { get; } = new List<LineaSalidum>();
+    public virtual ICollection<LineaSalida> LineaSalida { get; } = new List<LineaSalida>();
 
     public virtual Motivo? Motivo { get; set; }
 
