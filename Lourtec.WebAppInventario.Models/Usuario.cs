@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Lourtec.WebAppInventario.Models;
+namespace Lourtec.WebAppInventario.DAL.DataContext;
 
 public partial class Usuario
 {
     public int UsuarioId { get; set; }
 
-    public int Correo { get; set; }
+    public string Correo { get; set; } = null!;
 
     public string Password { get; set; } = null!;
 

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Lourtec.WebAppInventario.Models;
+namespace Lourtec.WebAppInventario.DAL.DataContext;
 
 public partial class OrdenCompra
 {
@@ -17,7 +17,15 @@ public partial class OrdenCompra
 
     public string? Observacion { get; set; }
 
-    public double Subtotal { get; set; }
+    public DateTime? Fecha { get; set; }
+
+    public double SubTotal { get; set; }
+
+    public double Descuento { get; set; }
+
+    public double Impuestos { get; set; }
+
+    public double Total { get; set; }
 
     public virtual CondicionPago? CondicionPago { get; set; }
 

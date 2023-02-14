@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Lourtec.WebAppInventario.Models;
+namespace Lourtec.WebAppInventario.DAL.DataContext;
 
 public partial class Salida
 {
     public int SalidaId { get; set; }
 
-    public int Codigo { get; set; }
+    public string Codigo { get; set; } = null!;
 
     public int? MotivoId { get; set; }
 

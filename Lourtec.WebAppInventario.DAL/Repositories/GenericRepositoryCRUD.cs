@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using Lourtec.WebAppInventario.DAL.Contracts;
 using Lourtec.WebAppInventario.DAL.DataContext;
-using Lourtec.WebAppInventario.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace Lourtec.WebAppInventario.DAL.Repositories
@@ -17,7 +16,7 @@ namespace Lourtec.WebAppInventario.DAL.Repositories
 
         public GenericRepositoryCRUD()
         {
-            _dbContext= new DbInventarioContext();
+            _dbContext = new DbInventarioContext();
             table = _dbContext.Set<T>();
         }
         public GenericRepositoryCRUD(DbInventarioContext dbContext)
@@ -38,7 +37,7 @@ namespace Lourtec.WebAppInventario.DAL.Repositories
         {
             T existe = table.Find(id);
             table.Remove(existe);
-             await _dbContext.SaveChangesAsync();
+            await _dbContext.SaveChangesAsync();
             return true;
         }
 
@@ -64,7 +63,7 @@ namespace Lourtec.WebAppInventario.DAL.Repositories
             await _dbContext.SaveChangesAsync();
             return true; // Preguntar esto a chala 
         }
- 
+
 
     }
 }

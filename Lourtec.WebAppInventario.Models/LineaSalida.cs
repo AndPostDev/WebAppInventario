@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Lourtec.WebAppInventario.Models;
+namespace Lourtec.WebAppInventario.DAL.DataContext;
 
 public partial class LineaSalida
 {
@@ -10,6 +10,8 @@ public partial class LineaSalida
     public int? SalidaId { get; set; }
 
     public int Cantidad { get; set; }
+
+    public double CostoSalida { get; set; }
 
     public int? ProductoId { get; set; }
 
