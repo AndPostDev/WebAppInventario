@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lourtec.WebAppInventario.DAL.Contracts
 {
-    public interface IGenericRepositoryCRUD<TEntity> where TEntity : class
+    public interface IGenericRepository<TEntity> where TEntity : class
     {
         Task<TEntity> GetById(int id);
         Task<IEnumerable<TEntity>> GetAll();

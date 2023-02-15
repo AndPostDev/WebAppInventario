@@ -9,17 +9,17 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Lourtec.WebAppInventario.DAL.Repositories
 {
-    public class GenericRepositoryCRUD<T> : IGenericRepositoryCRUD<T> where T : class
+    public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
         private readonly DbInventarioContext _dbContext;
         private DbSet<T> table;
 
-        public GenericRepositoryCRUD()
+        public GenericRepository()
         {
             _dbContext = new DbInventarioContext();
             table = _dbContext.Set<T>();
         }
-        public GenericRepositoryCRUD(DbInventarioContext dbContext)
+        public GenericRepository(DbInventarioContext dbContext)
         {
             _dbContext = dbContext;
             table = _dbContext.Set<T>();

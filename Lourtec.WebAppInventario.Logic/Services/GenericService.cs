@@ -10,9 +10,9 @@ namespace Lourtec.WebAppInventario.Logic.Services
 {
     public class GenericService<T> : IGenericService<T> where T : class
     {
-        private IGenericRepositoryCRUD<T> _repository;
+        private IGenericRepository<T> _repository;
 
-        public GenericService(IGenericRepositoryCRUD<T> respository)
+        public GenericService(IGenericRepository<T> respository)
         {
             _repository = respository;
         }

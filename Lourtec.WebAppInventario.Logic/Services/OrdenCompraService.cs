@@ -11,7 +11,7 @@ namespace Lourtec.WebAppInventario.Logic.Services
 {
     public class OrdenCompraService : GenericService<OrdenCompra>, IOrdenCompraService
     {
-        public OrdenCompraService(IGenericRepositoryCRUD<OrdenCompra> respository) : base(respository)
+        public OrdenCompraService(IGenericRepository<OrdenCompra> respository) : base(respository)
         {
         }
     }
